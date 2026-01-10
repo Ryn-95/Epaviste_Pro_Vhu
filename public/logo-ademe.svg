@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <defs>
+    <style>
+      .text { font-family: Arial, sans-serif; font-weight: bold; }
+      .ademe { fill: #0070b9; font-size: 60px; }
+      .slogan { fill: #009933; font-size: 14px; }
+    </style>
+  </defs>
+  <!-- Main Text -->
+  <text x="10" y="60" class="text ademe">ADEME</text>
+  
+  <!-- Green Line/Leaf abstract -->
+  <path d="M10,70 Q150,90 290,70" stroke="#009933" stroke-width="4" fill="none" />
+  
+  <!-- Slogan -->
+  <text x="10" y="90" class="text slogan">AGENCE DE LA TRANSITION ÉCOLOGIQUE</text>
+</svg>
