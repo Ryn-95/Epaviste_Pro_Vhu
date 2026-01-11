@@ -7,7 +7,9 @@ export const COMPANY_INFO = {
   website: "https://epaviste-agree-idf.fr",
   openingHours: "Lundi au Dimanche : 06h00 - 23h00",
   priceRange: "Gratuit",
-  areaServed: "Île-de-France"
+  areaServed: "Île-de-France",
+  certification: "PR 920001 B",
+  mapUrl: "https://maps.google.com/?q=15+Rue+des+Halles+75001+Paris"
 };
 
 export const DEPARTMENTS = [

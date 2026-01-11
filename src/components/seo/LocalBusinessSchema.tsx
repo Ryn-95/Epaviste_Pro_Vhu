@@ -11,11 +11,11 @@ export default function LocalBusinessSchema({ city }: { city?: string }) {
     "priceRange": COMPANY_INFO.priceRange,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": COMPANY_INFO.address.street,
-      "addressLocality": COMPANY_INFO.address.city,
-      "postalCode": COMPANY_INFO.address.postalCode,
-      "addressRegion": COMPANY_INFO.address.region,
-      "addressCountry": COMPANY_INFO.address.country
+      "streetAddress": "15 Rue des Halles",
+      "addressLocality": "Paris",
+      "postalCode": "75001",
+      "addressRegion": "Île-de-France",
+      "addressCountry": "FR"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
