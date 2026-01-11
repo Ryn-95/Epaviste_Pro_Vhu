@@ -2,9 +2,11 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { Phone, MapPin, ShieldAlert, Truck, CheckCircle, Clock, ChevronRight, FileCheck, AlertTriangle, FileText } from 'lucide-react';
 import { getDeptInfo, formatCityName } from '@/lib/idf-data';
+import { generateCityMetadata } from '@/lib/content-spinner';
 import Link from 'next/link';
 import CitySEOContent from '@/components/landing/CitySEOContent';
-import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+import AggressiveSchema from '@/components/seo/AggressiveSchema';
+import GhostCloud from '@/components/seo/GhostCloud';
 import Header from '@/components/landing/Header';
 
 // Fonction pour la date (Hack Fraîcheur)
@@ -18,10 +20,11 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = formatCityName(params.ville);
+  const metadataContent = generateCityMetadata(city, params.dept);
   
   return {
-    title: `Épaviste Agréé ${city} (Gratuit) - Centre VHU Agréé`,
-    description: `Service d'enlèvement d'épave gratuit à ${city} (${params.dept}). Centre VHU Agréé Préfecture. Destruction officielle, certificat Cerfa remis sur place.`,
+    title: metadataContent.title,
+    description: metadataContent.description,
     alternates: {
       canonical: `https://epaviste-agree-idf.fr/epaviste/${params.dept}/${params.ville}`,
     },
@@ -33,14 +36,19 @@ export default function CityPage({ params }: Props) {
   const deptInfo = getDeptInfo(params.dept);
   const zipPrefix = params.dept;
   const today = getDynamicDate();
+  // Growth Hack: Fake Zip Code based on Dept
+  const fakeZip = `${params.dept}000`;
 
   return (
     <div className="bg-white font-sans text-slate-900">
-      <LocalBusinessSchema city={city} />
+      <AggressiveSchema city={city} zip={fakeZip} />
       <Header />
       
+      {/* SPACER FOR DESKTOP HEADER (Avoid Overlap) */}
+      <div className="hidden lg:block h-[120px]"></div>
+
       {/* 1. HEADER URGENCE STICKY */}
-      <div className="bg-blue-950 text-white py-3 sticky top-0 z-50 shadow-xl border-b-4 border-red-600">
+      <div className="bg-blue-950 text-white py-3 sticky top-0 lg:top-[100px] z-40 shadow-xl border-b-4 border-red-600">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex flex-col leading-none">
              <span className="text-[10px] opacity-75 uppercase tracking-wider">Centre VHU Agréé État</span>
@@ -139,6 +147,11 @@ export default function CityPage({ params }: Props) {
 
       {/* 3. SEO Content with Dynamic City - EXCLUSIVE CONTENT */}
       <CitySEOContent city={city} deptCode={params.dept} deptName={deptInfo.name} />
+      
+      {/* 4. GHOST CLOUD (Internal Linking & Keyword Stuffing) */}
+      <div className="container mx-auto px-4 pb-20">
+        <GhostCloud city={city} />
+      </div>
     </div>
   );
 }

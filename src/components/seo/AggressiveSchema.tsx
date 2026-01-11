@@ -12,9 +12,9 @@ export default function AggressiveSchema({ city, zip }: Props) {
       {
         "@type": ["AutoPartsStore", "EmergencyService"],
         "name": `Épaviste Agréé VHU ${city}`,
-        "image": "https://epaviste-vhu-idf.fr/logo.png", // Placeholder
+        "image": "https://epaviste-agree-idf.fr/Logoepaviste1.png",
         "telephone": COMPANY_INFO.phone,
-        "url": `https://epaviste-vhu-idf.fr/epaviste/${zip.slice(0, 2)}/${city.toLowerCase().replace(/ /g, '-')}`,
+        "url": `https://epaviste-agree-idf.fr/epaviste/${zip.slice(0, 2)}/${city.toLowerCase().replace(/ /g, '-')}`,
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Intervention à domicile",

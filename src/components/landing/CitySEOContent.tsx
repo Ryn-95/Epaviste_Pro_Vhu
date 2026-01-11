@@ -1,4 +1,6 @@
 import { COMPANY_INFO } from '@/lib/seo-data';
+import { getDeptInfo } from '@/lib/idf-data';
+import { generateCityContent } from '@/lib/content-spinner';
 import Link from 'next/link';
 import { AlertTriangle, Leaf, Recycle, Truck, Phone, FileCheck, MapPin } from 'lucide-react';
 
@@ -9,6 +11,9 @@ interface CitySEOContentProps {
 }
 
 export default function CitySEOContent({ city, deptCode, deptName }: CitySEOContentProps) {
+  const deptInfo = getDeptInfo(deptCode);
+  const content = generateCityContent(city, deptCode, deptInfo);
+
   return (
     <section className="py-12 bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-12">
@@ -31,15 +36,25 @@ export default function CitySEOContent({ city, deptCode, deptName }: CitySEOCont
               </div>
             </div>
 
+            {/* DYNAMIC INTRO */}
             <p className="lead font-bold text-slate-800">
-              L'Épaviste Agréé {deptCode} est disponible dès maintenant pour enlever votre épave à {city} et dans tout le département {deptName}.
+              {content.intro}
             </p>
 
             <p>
-              Avez-vous un véhicule qui ne fonctionne plus et qui encombre votre jardin, votre garage ou le parking près de chez vous à <strong>{city}</strong> ? 
-              Vous ne savez pas quoi en faire ? Qu’il soit en état de marche ou HS, en panne, accidenté, brûlé ou simplement trop vieux... 
-              Notre centre VHU procède à l’<strong>enlèvement d’épave gratuit à {city}</strong> et ses environs.
+              {content.situation}
             </p>
+
+            {/* DYNAMIC DEPT SPECIFICS */}
+            <div className="my-8 p-6 bg-amber-50 border-l-4 border-amber-500">
+               <h3 className="flex items-center gap-2 !mt-0 !mb-2 !text-amber-900">
+                <AlertTriangle className="w-6 h-6 text-amber-600" />
+                Spécificités {deptName}
+              </h3>
+              <p className="!mb-0 text-sm text-amber-900 font-medium">
+                {content.deptSpecifics}
+              </p>
+            </div>
 
             <div className="my-8 p-6 bg-[#f8fafc] border-l-4 border-[#000091]">
               <h3 className="flex items-center gap-2 !mt-0 !mb-2 !text-slate-900">
@@ -48,16 +63,13 @@ export default function CitySEOContent({ city, deptCode, deptName }: CitySEOCont
               </h3>
               <p className="!mb-0 text-sm">
                 Grâce à notre expertise et à notre agrément préfectoral <strong>{COMPANY_INFO.certification}</strong>, nous sommes engagés à renforcer nos actions en faveur de l’écologie. 
-                C’est pourquoi nous proposons un service <strong>100% gratuit</strong> de retrait d’épave à {city}, directement à votre domicile. 
-                On s’occupe de tout pour vous débarrasser de votre épave camion, épave scooter, épave moto et épave voiture.
+                {content.solution}
               </p>
             </div>
 
             <h2>Pourquoi faire appel à un épaviste agréé à {city} ?</h2>
             <p>
-              L’enlèvement d'épave gratuit dans le {deptCode} est primordial si vous souhaitez vous séparer de votre voiture hors d'usage en toute légalité. 
-              L’abandon d’épave est un délit écologique grave (Article L.541-46 du Code de l'environnement) passible de <strong>2 ans de prison et 75 000€ d'amende</strong>.
-              Faire appel à un <strong>épaviste agréé VHU</strong> est la seule solution légale pour obtenir votre certificat de destruction (Cerfa 14365*01) et arrêter votre assurance.
+              {content.whyChoose}
             </p>
 
             <h3 className="flex items-center gap-2">
@@ -65,8 +77,7 @@ export default function CitySEOContent({ city, deptCode, deptName }: CitySEOCont
               Recyclage et Dépollution : Un geste pour la planète
             </h3>
             <p>
-              Une voiture est nuisible pour l’environnement car elle contient des fluides toxiques (huiles, liquides de refroidissement, batterie au plomb) qui polluent les sols et les nappes phréatiques. 
-              Confier les véhicules endommagés à notre centre de destruction agréé qui dessert <strong>{city}</strong> constitue la solution idéale pour un traitement respectueux de l’environnement.
+              {content.ecology}
             </p>
             <p>
               Le recyclage des véhicules en fin de vie aide à réduire la pollution, à préserver les ressources naturelles, tout en favorisant la création de nouveaux emplois dans le secteur du recyclage (économie circulaire).
@@ -75,7 +86,7 @@ export default function CitySEOContent({ city, deptCode, deptName }: CitySEOCont
 
             <h2>Enlèvement d’épave à {city} : Comment ça marche ?</h2>
             <p>
-              Notre service d'intervention à {city} est simplifié pour vous faire gagner du temps. Voici les étapes pour vous débarrasser de votre véhicule :
+              {content.processIntro}
             </p>
             <ul>
               <li><strong>Prise de rendez-vous :</strong> Appelez notre ligne directe au <strong>{COMPANY_INFO.phone}</strong> pour convenir d'un créneau. Nous intervenons 7j/7.</li>
@@ -113,7 +124,7 @@ export default function CitySEOContent({ city, deptCode, deptName }: CitySEOCont
 
             <div className="bg-[#E1000F] text-white p-6 mt-8 text-center rounded-sm">
               <p className="font-bold text-lg mb-2 uppercase">Une épave à enlever à {city} ?</p>
-              <p className="mb-6 opacity-90">Intervention gratuite et rapide aujourd'hui même.</p>
+              <p className="mb-6 opacity-90">{content.cta}</p>
               <a href={COMPANY_INFO.phoneLink} className="inline-flex items-center gap-2 bg-white text-[#E1000F] font-black px-6 py-3 uppercase tracking-wide hover:bg-slate-100 transition-colors">
                 <Phone className="w-5 h-5" />
                 Appeler le {COMPANY_INFO.phone}
