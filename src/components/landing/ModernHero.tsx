@@ -55,7 +55,7 @@ export default function ModernHero({ city }: { city?: string }) {
           
           {/* BOUTON ACTION "PROCÉDURE" */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="tel:0183621145" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-8 py-5 font-black text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10">
+            <a href="tel:0695297785" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-8 py-5 font-black text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10">
                <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                Démarrer la procédure
             </a>

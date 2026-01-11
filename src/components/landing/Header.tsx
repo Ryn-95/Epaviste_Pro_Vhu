@@ -135,7 +135,7 @@ export default function Header() {
               </div>
               
               <a 
-                href="tel:0183621145" 
+                href="tel:0695297785" 
                 className="group relative overflow-hidden bg-[#E1000F] hover:bg-[#c9000d] text-white pl-5 pr-6 py-2.5 rounded-xl transition-all shadow-[0_0_20px_rgba(225,0,15,0.4)] hover:shadow-[0_0_30px_rgba(225,0,15,0.6)] flex items-center gap-3"
               >
                 <div className="bg-white/20 p-1.5 rounded-lg">
@@ -143,7 +143,7 @@ export default function Header() {
                 </div>
                 <div className="flex flex-col leading-none">
                   <span className="text-[10px] font-bold uppercase opacity-80 mb-0.5">Urgence VHU</span>
-                  <span className="text-lg font-black tracking-tight">01 83 62 11 45</span>
+                  <span className="text-lg font-black tracking-tight">06 95 29 77 85</span>
                 </div>
               </a>
             </div>
@@ -185,9 +185,9 @@ export default function Header() {
               </Link>
             ))}
             
-            <a href="tel:0183621145" className="mt-4 bg-[#E1000F] text-white p-4 rounded-xl flex items-center justify-center gap-3 font-bold text-lg shadow-lg">
+            <a href="tel:0695297785" className="mt-4 bg-[#E1000F] text-white p-4 rounded-xl flex items-center justify-center gap-3 font-bold text-lg shadow-lg">
               <Phone size={20} />
-              Appeler le 01 83 62 11 45
+              Appeler le 06 95 29 77 85
             </a>
           </nav>
         </div>

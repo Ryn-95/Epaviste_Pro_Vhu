@@ -53,7 +53,7 @@ export default function RootLayout({
             </div>
           </a>
           <a 
-            href="tel:0183621145" 
+            href="tel:0695297785" 
             className="flex-1 bg-[#000091] text-white flex flex-col items-center justify-center font-bold text-sm hover:bg-blue-900 transition-colors"
           >
              <div className="flex items-center gap-2">

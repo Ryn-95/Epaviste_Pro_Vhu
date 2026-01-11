@@ -98,28 +98,14 @@ export default function DocumentsPage() {
 
         {/* SIDEBAR */}
         <div className="space-y-8">
-          <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-600 sticky top-32">
-            <h3 className="font-bold text-xl mb-4">Besoin d'aide ?</h3>
-            <p className="text-slate-600 mb-6 text-sm">
-              Il vous manque la Carte Grise ou le véhicule est gagé ? Pas de panique, nous avons des solutions administratives.
+          <div className="bg-blue-900 rounded-xl p-8 text-white text-center sticky top-24">
+            <h3 className="font-bold text-xl mb-4">Besoin d'aide pour les papiers ?</h3>
+            <p className="text-blue-200 mb-6 text-sm">
+              Notre secrétariat vous assiste gratuitement pour compléter votre dossier.
             </p>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="text-green-500 shrink-0 mt-1" size={18} />
-                <span className="text-sm font-medium">Procédure perte carte grise</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="text-green-500 shrink-0 mt-1" size={18} />
-                <span className="text-sm font-medium">Gestion véhicule gagé</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle className="text-green-500 shrink-0 mt-1" size={18} />
-                <span className="text-sm font-medium">Déclaration préfecture incluse</span>
-              </div>
-            </div>
-            <a href="tel:0183621145" className="mt-8 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded text-center flex items-center justify-center gap-2 transition-colors">
-              <Phone size={20} />
-              Conseiller Gratuit
+            <a href="tel:0695297785" className="bg-white text-blue-900 w-full py-3 rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-blue-50 transition">
+              <Phone size={18} />
+              06 95 29 77 85
             </a>
           </div>
         </div>

@@ -36,7 +36,7 @@ export default function CitySchema({ cityName, zipCode, geo: providedGeo }: Prop
         "@type": ["AutoPartsStore", "EmergencyService"],
         "name": `Centre VHU Agréé ${cityName}`,
         "description": `Service d'enlèvement d'épave gratuit à ${cityName}. Intervention immédiate.`,
-        "telephone": "01 83 62 11 45",
+        "telephone": "06 95 29 77 85",
         "areaServed": {
           "@type": "City",
           "name": cityName,

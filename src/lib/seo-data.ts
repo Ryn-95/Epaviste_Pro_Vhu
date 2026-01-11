@@ -1,18 +1,13 @@
 export const COMPANY_INFO = {
   name: "Épaviste Agréé VHU Île-de-France",
-  phone: "01 83 62 11 45",
-  phoneLink: "tel:0183621145",
-  certification: "PR 920001 B",
-  address: {
-    street: "19, chemin des Petits Marais",
-    city: "Gennevilliers",
-    postalCode: "92230",
-    region: "Île-de-France",
-    country: "FR",
-  },
+  address: "15 Rue des Halles, 75001 Paris",
+  phone: "06 95 29 77 85",
+  phoneLink: "tel:0695297785",
+  email: "contact@epaviste-agree-idf.fr",
+  website: "https://epaviste-agree-idf.fr",
+  openingHours: "Lundi au Dimanche : 06h00 - 23h00",
   priceRange: "Gratuit",
-  openingHours: "Mo-Su 00:00-23:59",
-  mapUrl: "https://maps.google.com/?q=Epaviste+VHU+Ile+de+France",
+  areaServed: "Île-de-France"
 };
 
 export const DEPARTMENTS = [

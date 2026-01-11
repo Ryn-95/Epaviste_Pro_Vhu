@@ -286,9 +286,9 @@ export default function RachatPage() {
 
       {/* MOBILE FLOATING CTA */}
       <div className="fixed bottom-4 right-4 z-50 md:hidden">
-        <a href="tel:0183621145" className="bg-[#E1000F] text-white font-bold py-3 px-6 rounded-full shadow-2xl border-2 border-white flex items-center gap-2 animate-bounce">
+        <a href="tel:0695297785" className="bg-[#E1000F] text-white font-bold py-3 px-6 rounded-full shadow-2xl border-2 border-white flex items-center gap-2 animate-bounce">
           <Phone size={20} fill="currentColor" />
-          URGENCE 01 83 62 11 45
+          URGENCE 06 95 29 77 85
         </a>
       </div>
     </div>

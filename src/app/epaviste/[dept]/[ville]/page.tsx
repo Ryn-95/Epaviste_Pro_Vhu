@@ -57,8 +57,8 @@ export default function CityPage({ params }: Props) {
                {city.toUpperCase()} ({zipPrefix})
              </span>
           </div>
-          <a href="tel:0183621145" className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-black text-sm md:text-xl flex items-center gap-2 shadow-lg transition-transform hover:scale-105">
-            <Phone size={20} className="animate-wiggle" /> 01 83 62 11 45
+          <a href="tel:0695297785" className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-black text-sm md:text-xl flex items-center gap-2 shadow-lg transition-transform hover:scale-105">
+            <Phone size={20} className="animate-wiggle" /> 06 95 29 77 85
           </a>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default function CityPage({ params }: Props) {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:0183621145" className="flex-1 bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-bold text-center shadow-blue-200 shadow-xl transition flex items-center justify-center gap-2">
+              <a href="tel:0695297785" className="flex-1 bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-bold text-center shadow-blue-200 shadow-xl transition flex items-center justify-center gap-2">
                 <Truck /> ENLÈVEMENT GRATUIT
               </a>
               <a href="#procedure" className="flex-1 bg-white border-2 border-slate-200 text-slate-700 hover:border-blue-300 hover:text-blue-700 px-8 py-4 rounded-xl font-bold text-center transition">
