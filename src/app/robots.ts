@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://epaviste-agree-idf.fr/sitemap.xml',
+    sitemap: 'https://www.epavisteprovhu.fr/sitemap.xml',
   };
 }

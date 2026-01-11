@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const robotoSlab = Roboto_Slab({ subsets: ["latin"], variable: '--font-roboto-slab' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://epaviste-agree-idf.fr'),
+  metadataBase: new URL('https://www.epavisteprovhu.fr'),
   title: {
     template: "%s | Épaviste Gratuit # Agréé VHU - Intervention Immédiate",
     default: "Épaviste Gratuit Agréé VHU Île-de-France et alentours - Enlèvement 7j/7",

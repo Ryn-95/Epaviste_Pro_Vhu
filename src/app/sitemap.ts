@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { deptMap } from '@/lib/idf-data';
 import { slugifyCity } from '@/lib/utils';
 
-const BASE_URL = 'https://epaviste-agree-idf.fr';
+const BASE_URL = 'https://www.epavisteprovhu.fr';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
