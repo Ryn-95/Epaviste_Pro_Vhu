@@ -44,9 +44,9 @@ export default function ProcessSteps() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {STEPS.map((step, idx) => (
-            <div key={idx} className="group bg-white p-8 relative transform hover:-translate-y-2 transition-transform duration-300 border-b-8 border-[#000091] hover:border-[#E1000F]">
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-xl z-10">
-                <span className="font-black text-4xl text-slate-300 group-hover:text-[#E1000F] transition-colors">{step.id}</span>
+            <div key={idx} className="group bg-white p-6 md:p-8 relative transform hover:-translate-y-2 transition-transform duration-300 border-b-8 border-[#000091] hover:border-[#E1000F] mt-8 md:mt-0">
+              <div className="absolute -top-4 -right-2 md:-top-6 md:-right-6 w-20 h-20 md:w-24 md:h-24 bg-slate-100 rounded-full flex items-center justify-center border-4 border-white shadow-xl z-10">
+                <span className="font-black text-3xl md:text-4xl text-slate-300 group-hover:text-[#E1000F] transition-colors">{step.id}</span>
               </div>
               
               <div className="flex flex-col h-full relative z-0">

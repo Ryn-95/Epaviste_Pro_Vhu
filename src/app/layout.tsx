@@ -44,7 +44,7 @@ export default function RootLayout({
         {/* MOBILE STICKY ACTION BAR */}
         <div className="fixed bottom-0 left-0 right-0 z-50 flex h-[60px] md:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
           <a 
-            href="https://wa.me/33612345678" 
+            href="https://wa.me/33695297785" 
             className="flex-1 bg-[#25D366] text-white flex flex-col items-center justify-center font-bold text-sm hover:bg-[#128c7e] transition-colors"
           >
             <div className="flex items-center gap-2">

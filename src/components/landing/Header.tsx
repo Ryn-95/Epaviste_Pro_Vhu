@@ -148,23 +148,37 @@ export default function Header() {
               </a>
             </div>
 
-            {/* MOBILE TOGGLE */}
-            <button 
-              className="xl:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
-              onClick={toggleMobileMenu}
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            {/* MOBILE ACTION & TOGGLE */}
+            <div className="flex items-center gap-2 xl:hidden">
+              {/* MOBILE CALL BUTTON */}
+              <a 
+                href="tel:0695297785" 
+                className="bg-[#E1000F] text-white p-2 rounded-lg hover:bg-[#c9000d] transition-colors shadow-lg animate-pulse-slow"
+                aria-label="Appeler maintenant"
+              >
+                <Phone size={20} />
+              </a>
+
+              {/* MOBILE TOGGLE */}
+              <button 
+                className="p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+                onClick={toggleMobileMenu}
+                aria-label="Menu"
+              >
+                {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
 
         {/* MOBILE MENU FULLSCREEN */}
         <div className={`
-          absolute top-full left-0 right-0 bg-slate-950/95 backdrop-blur-xl border-t border-white/10 p-6 shadow-2xl transition-all duration-300 origin-top
-          ${isMobileMenuOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-95 invisible'}
-          lg:hidden rounded-b-2xl
+          fixed inset-0 top-[70px] bg-slate-950 z-40 overflow-y-auto
+          ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
+          xl:hidden transition-all duration-300
         `}>
-          <nav className="flex flex-col gap-2">
+          <div className="p-4 space-y-6">
+            <nav className="flex flex-col gap-2">
             {[
               { name: 'Enlèvement Gratuit', href: '/services-epaviste', icon: Truck },
               { name: 'Documents Requis', href: '/documents-obligatoires', icon: FileText },
@@ -190,6 +204,7 @@ export default function Header() {
               Appeler le 06 95 29 77 85
             </a>
           </nav>
+          </div>
         </div>
       </header>
     </>

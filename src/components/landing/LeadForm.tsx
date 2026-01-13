@@ -12,7 +12,7 @@ export default function LeadForm() {
           type="text" 
           id="name"
           placeholder="Ex: Jean Dupont"
-          className="w-full px-4 py-3 bg-slate-800 border-2 border-slate-700 focus:border-[#E1000F] text-white outline-none text-sm font-bold placeholder-slate-600 transition-colors uppercase"
+          className="w-full px-4 py-3 bg-slate-800 border-2 border-slate-700 focus:border-[#E1000F] text-white outline-none text-base font-bold placeholder-slate-600 transition-colors uppercase"
         />
       </div>
       
@@ -22,7 +22,7 @@ export default function LeadForm() {
           type="tel" 
           id="phone"
           placeholder="06 00 00 00 00"
-          className="w-full px-4 py-3 bg-slate-800 border-2 border-slate-700 focus:border-[#E1000F] text-white outline-none text-sm font-bold placeholder-slate-600 transition-colors uppercase"
+          className="w-full px-4 py-3 bg-slate-800 border-2 border-slate-700 focus:border-[#E1000F] text-white outline-none text-base font-bold placeholder-slate-600 transition-colors uppercase"
         />
       </div>
       
@@ -32,7 +32,7 @@ export default function LeadForm() {
           type="text" 
           id="city"
           placeholder="Code postal ou Ville"
-          className="w-full px-4 py-3 bg-slate-800 border-2 border-slate-700 focus:border-[#E1000F] text-white outline-none text-sm font-bold placeholder-slate-600 transition-colors uppercase"
+          className="w-full px-4 py-3 bg-slate-800 border-2 border-slate-700 focus:border-[#E1000F] text-white outline-none text-base font-bold placeholder-slate-600 transition-colors uppercase"
         />
       </div>
 
