@@ -27,22 +27,22 @@ export default function ModernHero({ city }: { city?: string }) {
           {/* BADGES OFFICIELS - FLEX WRAP POUR MOBILE */}
           <div className="flex flex-wrap items-center gap-2 sm:gap-4">
             <div className="bg-white/5 border border-white/10 backdrop-blur-sm px-2 py-1.5 sm:px-4 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4 rounded-sm">
-              <img src="/logo-etat.svg" alt="Logo Épaviste Agréé État VHU" className="h-6 sm:h-8 lg:h-10 w-auto opacity-90" />
-              <div className="hidden sm:block w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
-              <img src="/logo-ademe.svg" alt="Partenaire ADEME Recyclage Auto" className="h-6 sm:h-8 lg:h-10 w-auto opacity-90" />
-              <div className="hidden sm:block w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
-              <img src="/logo-iso.svg" alt="Certifié ISO 14001 Environnement" className="h-6 sm:h-8 lg:h-10 w-auto opacity-90" />
-              <div className="hidden sm:block w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
-              <img src="/logo-ecolo.svg" alt="Recyclage Écologique Épave" className="h-6 sm:h-8 lg:h-10 w-auto opacity-90" />
+              <img src="/logo-etat.svg" alt="Logo Épaviste Agréé État VHU" className="h-4 sm:h-6 lg:h-8 w-auto opacity-90" />
+              <div className="hidden sm:block w-px h-4 lg:h-6 bg-white/20 shrink-0"></div>
+              <img src="/logo-ademe.svg" alt="Partenaire ADEME Recyclage Auto" className="h-4 sm:h-6 lg:h-8 w-auto opacity-90" />
+              <div className="hidden sm:block w-px h-4 lg:h-6 bg-white/20 shrink-0"></div>
+              <img src="/logo-iso.svg" alt="Certifié ISO 14001 Environnement" className="h-4 sm:h-6 lg:h-8 w-auto opacity-90" />
+              <div className="hidden sm:block w-px h-4 lg:h-6 bg-white/20 shrink-0"></div>
+              <img src="/logo-ecolo.svg" alt="Recyclage Écologique Épave" className="h-4 sm:h-6 lg:h-8 w-auto opacity-90" />
             </div>
-            <div className="bg-[#E1000F]/90 text-white text-[10px] lg:text-xs font-bold uppercase px-2 lg:px-3 py-1 tracking-wider border border-[#E1000F] whitespace-nowrap rounded-sm">
+            <div className="bg-[#E1000F]/90 text-white text-[9px] lg:text-[10px] font-bold uppercase px-2 lg:px-3 py-1 tracking-wider border border-[#E1000F] whitespace-nowrap rounded-sm">
               Centre VHU PR 920001 B
             </div>
           </div>
 
           {/* TITRE SERIF ROBUSTE - TAILLES FLUIDES */}
           <div className="max-w-full">
-            <h1 className="font-serif text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.15] font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
+            <h1 className="font-serif text-[clamp(1.4rem,3.5vw,2.5rem)] leading-[1.15] font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
               Intervention à domicile<br/>
               pour destruction de<br/>
               <span className="text-slate-300">votre voiture épave</span><br/>
