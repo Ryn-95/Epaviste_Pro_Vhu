@@ -28,8 +28,13 @@ export const metadata: Metadata = {
     google: "IdAKYkmSar288rIGFeySADxOY2PJk1YpjOUBkbnRX_U",
   },
   icons: {
-    icon: '/icon.png',
-    apple: '/icon.png',
+    icon: [
+      { url: '/icon.png' },
+      { url: '/favicon.png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png' },
+    ],
   },
 };
 
