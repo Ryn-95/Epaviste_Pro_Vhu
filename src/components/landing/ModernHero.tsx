@@ -19,7 +19,7 @@ export default function ModernHero({ city }: { city?: string }) {
         <div className="absolute inset-0 bg-noise z-10 opacity-30 mix-blend-overlay"></div>
       </div>
       
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 pt-28 pb-12 lg:pt-36 lg:pb-24 grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-4 pt-[clamp(6rem,15vh,9rem)] pb-12 lg:pt-36 lg:pb-24 grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         
         {/* GAUCHE : AUTORITÉ & RIGUEUR */}
         <div className="lg:col-span-7 space-y-6 lg:space-y-8">
@@ -42,20 +42,20 @@ export default function ModernHero({ city }: { city?: string }) {
 
           {/* TITRE SERIF ROBUSTE - TAILLES FLUIDES */}
           <div className="max-w-full">
-            <h1 className="font-serif text-[2.5rem] leading-[1.1] sm:text-5xl lg:text-7xl font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
+            <h1 className="font-serif text-[clamp(2.5rem,8vw,4.5rem)] leading-[1.05] font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
               Épaviste<br/>
               <span className="text-slate-300">Pro VHU</span><br/>
               <span className="text-[#E1000F]">Agréé Gratuit</span>
             </h1>
-            <p className="mt-4 lg:mt-6 text-sm sm:text-base lg:text-lg text-slate-300 max-w-xl font-medium leading-relaxed border-l-4 border-slate-600 pl-4 lg:pl-6">
+            <p className="mt-4 lg:mt-6 text-base sm:text-lg text-slate-300 max-w-xl font-medium leading-relaxed border-l-4 border-slate-600 pl-4 lg:pl-6">
               Service officiel d'enlèvement et de recyclage d'épaves {city ? `à ${city}` : "en Île-de-France"}. 
-              <span className="block mt-1 text-slate-400 text-xs sm:text-sm">Conformité préfectorale garantie (Code de l'environnement Art. R543-162).</span>
+              <span className="block mt-1 text-slate-400 text-sm">Conformité préfectorale garantie (Code de l'environnement Art. R543-162).</span>
             </p>
           </div>
           
           {/* BOUTON ACTION "PROCÉDURE" */}
           <div className="flex flex-col sm:flex-row gap-4 pt-2 lg:pt-4 w-full sm:w-auto">
-            <a href="tel:0695297785" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-6 lg:px-8 py-4 lg:py-5 font-black text-base lg:text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10 w-full sm:w-auto rounded-lg sm:rounded-none">
+            <a href="tel:0695297785" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-6 lg:px-8 py-4 lg:py-5 font-black text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10 w-full sm:w-auto rounded-lg sm:rounded-none">
                <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                Démarrer la procédure
             </a>

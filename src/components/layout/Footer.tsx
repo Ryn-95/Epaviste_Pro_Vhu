@@ -6,7 +6,7 @@ import { COMPANY_INFO } from '@/lib/seo-data';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-slate-950 text-slate-400 text-xs border-t-4 border-[#000091] overflow-hidden">
+    <footer className="relative bg-slate-950 text-slate-400 text-xs border-t-4 border-[#000091] overflow-hidden pb-safe">
       {/* Texture Noise */}
       <div className="absolute inset-0 bg-noise opacity-5 pointer-events-none"></div>
 

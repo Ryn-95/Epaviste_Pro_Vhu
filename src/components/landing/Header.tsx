@@ -24,11 +24,12 @@ export default function Header() {
   return (
     <>
       {/* ESPACEUR POUR COMPENSER LA BARRE FIXED - AJUSTÉ MOBILE */}
-      <div className="h-[70px] md:h-[100px] w-full bg-slate-900 lg:hidden"></div>
+      <div className="h-[calc(70px+env(safe-area-inset-top))] md:h-[100px] w-full bg-slate-900 lg:hidden"></div>
 
       <header className={`
         fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
-        lg:top-4 lg:left-4 lg:right-4 lg:max-w-7xl lg:mx-auto lg:rounded-2xl
+        pt-[env(safe-area-inset-top)]
+        lg:pt-0 lg:top-4 lg:left-4 lg:right-4 lg:max-w-7xl lg:mx-auto lg:rounded-2xl
         ${scrolled ? 'lg:top-2 shadow-2xl bg-slate-950/95' : 'bg-slate-900/90 backdrop-blur-md shadow-xl'}
         border-b lg:border border-white/10
       `}>
