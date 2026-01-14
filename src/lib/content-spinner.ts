@@ -42,19 +42,31 @@ const INTROS: Record<Archetype, string[]> = {
     `Stationner un véhicule hors d'usage à **${'{city}'}** est un véritable casse-tête avec les règles de voirie strictes. Notre service d'épaviste agréé intervient directement dans les parkings souterrains et les rues étroites.`,
     `La fourrière vous menace ou votre assurance réclame la destruction ? À **${'{city}'}**, nous intervenons en urgence pour enlever votre épave, même sans clés ou en sous-sol (-1, -2...).`,
     `Vous habitez **${'{city}'}** et votre voiture ne démarre plus ? Ne risquez pas l'amende pour stationnement abusif. Nous la récupérons gratuitement aujourd'hui même.`,
-    `Spécialiste des interventions difficiles à **${'{city}'}**, notre équipe retire votre véhicule en panne où qu'il soit : parking privé, box, ou sur la voie publique.`
+    `Spécialiste des interventions difficiles à **${'{city}'}**, notre équipe retire votre véhicule en panne où qu'il soit : parking privé, box, ou sur la voie publique.`,
+    `Marre de payer une assurance pour une voiture qui ne roule plus à **${'{city}'}** ? Libérez-vous de ce poids financier et administratif grâce à notre enlèvement 100% gratuit.`,
+    `Les règles de stationnement à **${'{city}'}** ne pardonnent pas les véhicules ventouses. Évitez l'enlèvement fourrière coûteux en faisant appel à notre centre VHU agréé.`,
+    `Votre véhicule est accidenté ou en panne dans un sous-sol à **${'{city}'}** ? Nous disposons de dépanneuses surbaissées spécialement conçues pour les accès limités en hauteur.`,
+    `Besoin d'un certificat de destruction pour la prime à la conversion à **${'{city}'}** ? Nous vous fournissons tous les documents officiels sur place lors de l'enlèvement.`
   ],
   SUBURBAN: [
     `Votre voiture encombre votre allée ou votre garage à **${'{city}'}** ? Libérez de l'espace gratuitement grâce à notre service d'enlèvement d'épave agréé VHU.`,
     `Résidant à **${'{city}'}**, vous cherchez à vous débarrasser d'un vieux véhicule ? Nous nous déplaçons à votre domicile pour une prise en charge complète et gratuite.`,
     `Ne laissez pas votre véhicule se dégrader devant chez vous à **${'{city}'}**. En tant que centre VHU agréé, nous assurons son recyclage dans le respect des normes environnementales.`,
-    `Besoin de faire place nette à **${'{city}'}** ? Qu'il soit roulant ou non, nous chargeons votre véhicule directement depuis votre domicile pour la casse.`
+    `Besoin de faire place nette à **${'{city}'}** ? Qu'il soit roulant ou non, nous chargeons votre véhicule directement depuis votre domicile pour la casse.`,
+    `Une vieille voiture prend la poussière dans votre jardin à **${'{city}'}** ? C'est le moment de faire du tri. Notre intervention est rapide, propre et totalement gratuite.`,
+    `Vous ne savez pas comment transporter votre véhicule non-roulant jusqu'à la casse depuis **${'{city}'}** ? Ne vous déplacez pas, nous venons à vous avec notre camion plateau.`,
+    `Protégez l'environnement de votre commune à **${'{city}'}** en confiant votre VHU à un professionnel qui assurera sa dépollution complète (huiles, batteries, fluides).`,
+    `Le stationnement résidentiel à **${'{city}'}** est précieux. Ne le gâchez pas avec une épave. Récupérez votre place de parking dès demain.`
   ],
   RURAL_MIXED: [
     `Un véhicule abandonné au fond du jardin ou dans une grange à **${'{city}'}** ? Nous sommes équipés pour les enlèvements en terrain difficile ou en zone rurale.`,
     `La protection de la nature à **${'{city}'}** passe par le recyclage des vieilles voitures. Évitez la pollution des sols en nous confiant votre épave gratuitement.`,
     `Notre camion tout-terrain sillonne les routes autour de **${'{city}'}** pour débarrasser les particuliers de leurs véhicules hors d'usage (VHU). Service 100% offert.`,
-    `Vous avez une carcasse de voiture qui traîne à **${'{city}'}** ? Même sans roues ou accidentée, nous venons la chercher pour la détruire en centre agréé.`
+    `Vous avez une carcasse de voiture qui traîne à **${'{city}'}** ? Même sans roues ou accidentée, nous venons la chercher pour la détruire en centre agréé.`,
+    `Loin des centres-villes, se débarrasser d'une épave autour de **${'{city}'}** peut sembler compliqué. Pas avec nous : nous couvrons toute la zone sans frais kilométriques.`,
+    `Préservez les paysages et les champs de **${'{city}'}**. Une épave qui rouille est une source de pollution visuelle et chimique. Nous l'enlevons gratuitement.`,
+    `Que vous soyez dans le bourg ou en périphérie de **${'{city}'}**, notre service d'épaviste agréé vient jusqu'à votre porte pour récupérer tout type de véhicule.`,
+    `Nous intervenons régulièrement dans les fermes et propriétés autour de **${'{city}'}** pour l'enlèvement de véhicules utilitaires, camionnettes ou voitures hors d'usage.`
   ]
 };
 
@@ -64,19 +76,31 @@ const SITUATIONS: Record<Archetype, string[]> = {
     `Avec la chasse aux voitures ventouses à ${'{city}'}, garder une épave dans la rue est risqué. La mise en fourrière coûte cher et les points de permis peuvent sauter.`,
     `L'accès est difficile chez vous à ${'{city}'} ? Pas de souci. Nos dépanneuses "panier" sont conçues pour se faufiler dans la circulation dense et les accès exigus.`,
     `Le stationnement est une denrée rare à ${'{city}'}. Ne gaspillez pas une place pour une voiture qui ne roule plus. Libérez-la pour vous ou vos voisins.`,
-    `Vous craignez les complications pour sortir un véhicule d'un box à ${'{city}'} ? Nos techniciens sont experts en manœuvres délicates en milieu urbain.`
+    `Vous craignez les complications pour sortir un véhicule d'un box à ${'{city}'} ? Nos techniciens sont experts en manœuvres délicates en milieu urbain.`,
+    `Les amendes pour stationnement abusif (plus de 7 jours) à ${'{city}'} pleuvent rapidement. N'attendez pas la notification de la police municipale pour agir.`,
+    `Vendre une voiture en panne à ${'{city}'} attire souvent des acheteurs peu scrupuleux. Évitez les arnaques et choisissez la destruction officielle et sécurisée.`,
+    `Votre syndic de copropriété à ${'{city}'} vous met en demeure d'enlever votre véhicule du parking ? Nous intervenons rapidement pour régulariser la situation.`,
+    `La circulation dense à ${'{city}'} rend le remorquage par soi-même dangereux et illégal. Laissez faire nos professionnels équipés et assurés.`
   ],
   SUBURBAN: [
     `Un véhicule immobile à ${'{city}'} finit par attirer les nuisibles et rouiller, ce qui est mauvais pour votre terrain et l'esthétique de votre maison.`,
     `Votre assurance continue de vous prélever pour une voiture qui ne bouge plus à ${'{city}'} ? Stoppez les frais en obtenant votre certificat de destruction dès aujourd'hui.`,
     `Le voisinage à ${'{city}'} peut se plaindre d'une épave visible. Réglez le problème à l'amiable et gratuitement avec notre intervention rapide.`,
-    `Difficile de vendre une voiture en panne à ${'{city}'} ? La destruction est souvent la solution la plus simple et la plus sûre juridiquement.`
+    `Difficile de vendre une voiture en panne à ${'{city}'} ? La destruction est souvent la solution la plus simple et la plus sûre juridiquement.`,
+    `Une épave dans votre allée à ${'{city}'} fait baisser la valeur perçue de votre maison. Redonnez du cachet à votre propriété en nous laissant l'enlever.`,
+    `Les enfants jouent parfois autour des voitures abandonnées à ${'{city}'}, ce qui représente un danger (verre brisé, rouille). Sécurisez votre domicile.`,
+    `Vous manquez de place pour votre nouvelle voiture à ${'{city}'} ? Faites de la place en vous débarrassant de l'ancienne sans aucun frais.`,
+    `Stocker un VHU (Véhicule Hors d'Usage) chez soi à ${'{city}'} est réglementé. Évitez les soucis avec la mairie en optant pour la destruction agréée.`
   ],
   RURAL_MIXED: [
     `Les épaves laissées en pleine nature autour de ${'{city}'} polluent les nappes phréatiques avec les fuites d'huile et de batterie. Agissez pour l'environnement.`,
     `Même si elle est stockée sur un terrain privé à ${'{city}'}, une épave reste un déchet dangereux aux yeux de la loi. Nous vous aidons à vous mettre en conformité.`,
     `Accès boueux ou chemin étroit à ${'{city}'} ? Notre matériel est adapté pour récupérer les véhicules même dans les endroits les moins accessibles.`,
-    `Ne laissez pas la végétation envahir votre vieille voiture à ${'{city}'}. Nous la retirons proprement, sans laisser de traces ni de débris.`
+    `Ne laissez pas la végétation envahir votre vieille voiture à ${'{city}'}. Nous la retirons proprement, sans laisser de traces ni de débris.`,
+    `La rouille et les fluides toxiques s'infiltrent dans le sol de ${'{city}'}. Protégez votre terre et vos cultures en évacuant ces déchets métalliques.`,
+    `Vous avez hérité d'un vieux tacot invendable à ${'{city}'} ? Nous vous délivrons le certificat de destruction nécessaire pour clore le dossier administratif.`,
+    `Pas besoin de louer une remorque coûteuse. Nous venons chercher votre épave à ${'{city}'} gratuitement, quelle que soit la distance au centre de recyclage.`,
+    `Nous aidons régulièrement les agriculteurs et propriétaires terriens de ${'{city}'} à nettoyer leurs terrains des vieilles mécaniques accumulées.`
   ]
 };
 
