@@ -13,8 +13,8 @@ const STEPS = [
   {
     id: "02",
     icon: Truck,
-    title: "ENLÈVEMENT PHYSIQUE",
-    desc: "Intervention de l'épaviste agréé sur le lieu de stationnement (domicile, voie publique, parking).",
+    title: "ENLÈVEMENT ÉPAVISTE PRO",
+    desc: "Intervention de votre épaviste pro VHU agréé sur le lieu de stationnement.",
     legal: "Art. R.543-157",
     details: "Intervention < 24h"
   },

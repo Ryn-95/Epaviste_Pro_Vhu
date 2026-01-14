@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="relative w-32 h-32 mb-4 -ml-2">
               <NextImage 
                 src="/Logoepaviste1.png" 
-                alt="Logo Épaviste VHU" 
+                alt="Logo Épaviste Pro VHU Agréé Île-de-France" 
                 fill
                 className="object-contain"
               />

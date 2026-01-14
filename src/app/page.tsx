@@ -9,6 +9,7 @@ import FAQ from '@/components/landing/FAQ';
 import CitySEOContent from '@/components/landing/CitySEOContent';
 import GovernmentAid from '@/components/landing/GovernmentAid';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+import SEOContentBlock from '@/components/landing/SEOContentBlock';
 
 export default function Home() {
   return (
@@ -42,7 +43,10 @@ export default function Home() {
       {/* 7. FAQ */}
       <FAQ />
 
-      {/* 8. SEO Content (kept for ranking power) */}
+      {/* 8. SEO Power Block - Keyword Density Booster */}
+      <SEOContentBlock />
+
+      {/* 9. Dynamic City Content (kept for ranking power) */}
       <CitySEOContent 
         city="Île-de-France" 
         deptCode="IDF" 

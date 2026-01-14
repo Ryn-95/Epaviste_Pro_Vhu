@@ -26,18 +26,18 @@ export default function ModernHero({ city }: { city?: string }) {
           
           {/* BADGES OFFICIELS */}
           <div className="flex flex-wrap items-center gap-3 lg:gap-4">
-             <div className="bg-white/5 border border-white/10 backdrop-blur-sm px-3 py-2 lg:px-4 flex items-center gap-3 lg:gap-4 rounded-sm overflow-x-auto max-w-full">
-                <img src="/logo-etat.svg" alt="Agréé État" className="h-8 lg:h-10 w-auto opacity-90" />
-                <div className="w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
-                <img src="/logo-ademe.svg" alt="Partenaire ADEME" className="h-8 lg:h-10 w-auto opacity-90" />
-                <div className="w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
-                <img src="/logo-iso.svg" alt="Certifié ISO 14001" className="h-8 lg:h-10 w-auto opacity-90" />
-               <div className="w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
-               <img src="/logo-ecolo.svg" alt="Recyclage Écologique" className="h-8 lg:h-10 w-auto opacity-90" />
+            <div className="bg-white/5 border border-white/10 backdrop-blur-sm px-3 py-2 lg:px-4 flex items-center gap-3 lg:gap-4 rounded-sm overflow-x-auto max-w-full">
+              <img src="/logo-etat.svg" alt="Logo Épaviste Agréé État VHU" className="h-8 lg:h-10 w-auto opacity-90" />
+              <div className="w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
+              <img src="/logo-ademe.svg" alt="Partenaire ADEME Recyclage Auto" className="h-8 lg:h-10 w-auto opacity-90" />
+              <div className="w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
+              <img src="/logo-iso.svg" alt="Certifié ISO 14001 Environnement" className="h-8 lg:h-10 w-auto opacity-90" />
+              <div className="w-px h-6 lg:h-8 bg-white/20 shrink-0"></div>
+              <img src="/logo-ecolo.svg" alt="Recyclage Écologique Épave" className="h-8 lg:h-10 w-auto opacity-90" />
             </div>
-             <div className="bg-[#E1000F]/90 text-white text-[10px] lg:text-xs font-bold uppercase px-2 lg:px-3 py-1 tracking-wider border border-[#E1000F] whitespace-nowrap">
-               Centre VHU PR 920001 B
-             </div>
+            <div className="bg-[#E1000F]/90 text-white text-[10px] lg:text-xs font-bold uppercase px-2 lg:px-3 py-1 tracking-wider border border-[#E1000F] whitespace-nowrap">
+              Centre VHU PR 920001 B
+            </div>
           </div>
 
           {/* TITRE SERIF ROBUSTE */}

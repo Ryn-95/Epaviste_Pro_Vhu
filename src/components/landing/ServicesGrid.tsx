@@ -4,8 +4,8 @@ import { Car, Euro, AlertTriangle, Shield, Leaf, Clock, ArrowRight } from 'lucid
 const SERVICES = [
   {
     icon: Car,
-    title: "ENLÈVEMENT ÉPAVE",
-    desc: "Service gratuit pour tout véhicule complet (VHU).",
+    title: "ÉPAVISTE PRO VHU",
+    desc: "Enlèvement d'épave gratuit par un professionnel agréé.",
     badge: "GRATUIT"
   },
   {

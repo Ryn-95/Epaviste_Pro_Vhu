@@ -3,6 +3,11 @@ import { ChevronDown } from 'lucide-react';
 
 const FAQS = [
   {
+    q: "POURQUOI CHOISIR UN ÉPAVISTE PRO VHU ?",
+    sub: "Garantie légale et écologique",
+    a: "Faire appel à un Épaviste Pro VHU (Véhicule Hors d'Usage) est une OBLIGATION LÉGALE. Seul un professionnel agréé par la préfecture (comme notre centre PR 920001 B) est habilité à délivrer le certificat de destruction qui vous dégage de toute responsabilité administrative et juridique."
+  },
+  {
     q: "GRATUITÉ DU SERVICE",
     sub: "Conditions d'application de l'article R.543-156",
     a: "L'enlèvement est STRICTEMENT GRATUIT pour tout véhicule complet (moteur, pot catalytique, roues). Aucune somme ne vous sera demandée. Nous nous rémunérons uniquement via la valorisation des matières premières (acier, aluminium) en centre de recyclage agréé."
