@@ -10,6 +10,13 @@ const robotoSlab = Roboto_Slab({ subsets: ["latin"], variable: '--font-roboto-sl
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.epavisteprovhu.fr'),
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+    viewportFit: 'cover',
+  },
   title: {
     template: "%s | Épaviste Pro VHU Gratuit - Agréé Préfecture",
     default: "Épaviste Pro VHU Gratuit Île-de-France - Agréé PR 920001 B",

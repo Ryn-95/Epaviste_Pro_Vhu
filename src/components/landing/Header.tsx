@@ -23,48 +23,48 @@ export default function Header() {
 
   return (
     <>
-      {/* ESPACEUR POUR COMPENSER LA BARRE FIXED */}
-      <div className="h-[80px] md:h-[100px] w-full bg-slate-900 lg:hidden"></div>
+      {/* ESPACEUR POUR COMPENSER LA BARRE FIXED - AJUSTÉ MOBILE */}
+      <div className="h-[70px] md:h-[100px] w-full bg-slate-900 lg:hidden"></div>
 
       <header className={`
         fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out
         lg:top-4 lg:left-4 lg:right-4 lg:max-w-7xl lg:mx-auto lg:rounded-2xl
         ${scrolled ? 'lg:top-2 shadow-2xl bg-slate-950/95' : 'bg-slate-900/90 backdrop-blur-md shadow-xl'}
-        border border-white/10
+        border-b lg:border border-white/10
       `}>
         
         {/* LIGNE TRICOLORE DISCRÈTE (EN BAS DE BARRE) */}
-        <div className="absolute bottom-0 left-4 right-4 h-[2px] bg-gradient-to-r from-blue-600 via-white to-red-600 opacity-50 rounded-full"></div>
+        <div className="absolute bottom-0 left-0 right-0 lg:left-4 lg:right-4 h-[2px] bg-gradient-to-r from-blue-600 via-white to-red-600 opacity-50 lg:rounded-full"></div>
 
         <div className="px-4 md:px-6 relative z-10">
           <div className="flex justify-between items-center h-[70px] md:h-[80px]">
             
             {/* LEFT GROUP: IDENTITY + ECO */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-3 sm:gap-6 max-w-[80%]">
               {/* 1. IDENTITY BLOCK */}
-              <Link href="/" className="flex items-center gap-4 group shrink-0">
+              <Link href="/" className="flex items-center gap-3 group shrink-0">
                 <div className={`
                   relative transition-all duration-300
-                  ${scrolled ? 'w-10 h-10' : 'w-12 h-12 md:w-14 md:h-14'}
-                  bg-gradient-to-br from-white to-slate-200 rounded-xl shadow-lg p-1 border border-white/20
+                  ${scrolled ? 'w-9 h-9' : 'w-10 h-10 md:w-14 md:h-14'}
+                  bg-gradient-to-br from-white to-slate-200 rounded-xl shadow-lg p-1 border border-white/20 shrink-0
                 `}>
                   <NextImage 
                     src="/Logoepaviste1.png" 
                     alt="Logo Épaviste" 
                     fill
-                    className="object-contain p-1"
+                    className="object-contain p-0.5"
                     priority
                   />
                 </div>
-                <div className="flex flex-col">
-                  <h1 className="font-serif text-xl md:text-2xl font-black text-white uppercase tracking-tight leading-none group-hover:text-blue-400 transition-colors">
+                <div className="flex flex-col overflow-hidden">
+                  <h1 className="font-serif text-lg sm:text-xl md:text-2xl font-black text-white uppercase tracking-tight leading-none group-hover:text-blue-400 transition-colors truncate">
                     Épaviste<span className="text-[#E1000F]">.PRO</span>
                   </h1>
                   <div className="flex items-center gap-2 mt-0.5">
-                    <div className="flex gap-0.5">
+                    <div className="flex gap-0.5 shrink-0">
                       {[1,2,3,4,5].map(i => <Star key={i} size={8} className="fill-[#E1000F] text-[#E1000F]" />)}
                     </div>
-                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider hidden sm:block">
+                    <span className="text-[9px] sm:text-[10px] font-bold text-slate-400 uppercase tracking-wider truncate">
                       Centre VHU Agréé
                     </span>
                   </div>
