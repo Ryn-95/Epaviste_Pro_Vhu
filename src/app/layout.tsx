@@ -3,7 +3,7 @@ import { Inter, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 import TrustBadge from "@/components/ui/TrustBadge";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const robotoSlab = Roboto_Slab({ subsets: ["latin"], variable: '--font-roboto-slab' });
@@ -60,21 +60,12 @@ export default function RootLayout({
         {/* MOBILE STICKY ACTION BAR */}
         <div className="fixed bottom-0 left-0 right-0 z-50 flex h-[60px] md:hidden shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
           <a 
-            href="https://wa.me/33695297785" 
-            className="flex-1 bg-[#25D366] text-white flex flex-col items-center justify-center font-bold text-sm hover:bg-[#128c7e] transition-colors"
-          >
-            <div className="flex items-center gap-2">
-              <MessageCircle size={20} />
-              <span>WhatsApp</span>
-            </div>
-          </a>
-          <a 
             href="tel:0695297785" 
-            className="flex-1 bg-[#000091] text-white flex flex-col items-center justify-center font-bold text-sm hover:bg-blue-900 transition-colors"
+            className="flex-1 bg-[#E1000F] text-white flex flex-col items-center justify-center font-bold text-lg hover:bg-red-700 transition-colors uppercase tracking-widest pb-safe"
           >
-             <div className="flex items-center gap-2">
-              <Phone size={20} />
-              <span>APPELER</span>
+             <div className="flex items-center gap-3">
+              <Phone size={24} className="animate-pulse" />
+              <span>Appeler l'épaviste</span>
             </div>
           </a>
         </div>
