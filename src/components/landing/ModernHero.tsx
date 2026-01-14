@@ -43,9 +43,9 @@ export default function ModernHero({ city }: { city?: string }) {
           {/* TITRE SERIF ROBUSTE */}
           <div>
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-6xl font-black leading-tight text-white uppercase drop-shadow-xl tracking-tight">
-              Destruction<br/>
-              <span className="text-slate-300">Administrative</span><br/>
-              <span className="text-[#E1000F]">VHU Agréée</span>
+              Épaviste<br/>
+              <span className="text-slate-300">Pro VHU</span><br/>
+              <span className="text-[#E1000F]">Agréé Gratuit</span>
             </h1>
             <p className="mt-4 lg:mt-6 text-base lg:text-lg text-slate-300 max-w-xl font-medium leading-relaxed border-l-4 border-slate-600 pl-4 lg:pl-6">
               Service officiel d'enlèvement et de recyclage d'épaves {city ? `à ${city}` : "en Île-de-France"}. 

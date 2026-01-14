@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: metadataContent.title,
     description: metadataContent.description,
     alternates: {
-      canonical: `https://epaviste-agree-idf.fr/epaviste/${params.dept}/${params.ville}`,
+      canonical: `https://www.epavisteprovhu.fr/epaviste/${params.dept}/${params.ville}`,
     },
   };
 }

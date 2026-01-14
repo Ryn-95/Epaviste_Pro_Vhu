@@ -11,10 +11,10 @@ export default function AggressiveSchema({ city, zip }: Props) {
     "@graph": [
       {
         "@type": ["AutoPartsStore", "EmergencyService"],
-        "name": `Épaviste Agréé VHU ${city}`,
-        "image": "https://epaviste-agree-idf.fr/Logoepaviste1.png",
+        "name": `Épaviste Pro VHU Agréé ${city}`,
+        "image": "https://www.epavisteprovhu.fr/Logoepaviste1.png",
         "telephone": COMPANY_INFO.phone,
-        "url": `https://epaviste-agree-idf.fr/epaviste/${zip.slice(0, 2)}/${city.toLowerCase().replace(/ /g, '-')}`,
+        "url": `https://www.epavisteprovhu.fr/epaviste/${zip.slice(0, 2)}/${city.toLowerCase().replace(/ /g, '-')}`,
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Intervention à domicile",

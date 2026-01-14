@@ -11,10 +11,10 @@ const robotoSlab = Roboto_Slab({ subsets: ["latin"], variable: '--font-roboto-sl
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.epavisteprovhu.fr'),
   title: {
-    template: "%s | Épaviste Gratuit # Agréé VHU - Intervention Immédiate",
-    default: "Épaviste Gratuit Agréé VHU Île-de-France et alentours - Enlèvement 7j/7",
+    template: "%s | Épaviste Pro VHU Gratuit - Agréé Préfecture",
+    default: "Épaviste Pro VHU Gratuit Île-de-France - Agréé PR 920001 B",
   },
-  description: "Enlèvement Gratuit d'Épave 7j/7 en Île-de-France et alentours. Certificat de Destruction fourni sur place. Centre VHU Agréé Préfecture (PR 920001 B). Intervention en 30min.",
+  description: "Service Épaviste Pro VHU Gratuit. Enlèvement d'épave 7j/7 en Île-de-France. Centre Agréé Préfecture (PR 920001 B). Certificat de Destruction immédiat.",
   robots: {
     index: true,
     follow: true,

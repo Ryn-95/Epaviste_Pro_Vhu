@@ -1,10 +1,10 @@
 export const COMPANY_INFO = {
-  name: "Épaviste Agréé VHU Île-de-France",
+  name: "Épaviste Pro VHU Agréé Île-de-France",
   address: "15 Rue des Halles, 75001 Paris",
   phone: "06 95 29 77 85",
   phoneLink: "tel:0695297785",
-  email: "contact@epaviste-agree-idf.fr",
-  website: "https://epaviste-agree-idf.fr",
+  email: "contact@epavisteprovhu.fr",
+  website: "https://www.epavisteprovhu.fr",
   openingHours: "Lundi au Dimanche : 06h00 - 23h00",
   priceRange: "Gratuit",
   areaServed: "Île-de-France",

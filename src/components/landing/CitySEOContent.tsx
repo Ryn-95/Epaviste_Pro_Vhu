@@ -25,7 +25,7 @@ export default function CitySEOContent({ city, deptCode, deptName }: CitySEOCont
             {/* Header Block like the example */}
             <div className="not-prose bg-slate-50 border border-slate-200 p-6 mb-8 rounded-sm">
               <h1 className="text-2xl md:text-3xl font-black text-slate-900 mb-2 uppercase">
-                Enlèvement épave gratuit à {city} ({deptCode})
+                Épaviste Pro VHU gratuit à {city} ({deptCode})
               </h1>
               <p className="text-slate-600 font-medium mb-4">
                 Service Agréé Préfecture <strong>{COMPANY_INFO.certification}</strong> | Intervention Immédiate
