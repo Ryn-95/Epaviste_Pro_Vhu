@@ -42,10 +42,11 @@ export default function ModernHero({ city }: { city?: string }) {
 
           {/* TITRE SERIF ROBUSTE - TAILLES FLUIDES */}
           <div className="max-w-full">
-            <h1 className="font-serif text-[clamp(2.5rem,8vw,4.5rem)] leading-[1.05] font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
-              Épaviste<br/>
-              <span className="text-slate-300">Pro VHU</span><br/>
-              <span className="text-[#E1000F]">Agréé Gratuit</span>
+            <h1 className="font-serif text-[clamp(1.8rem,4.5vw,3.2rem)] leading-[1.15] font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
+              Intervention à domicile<br/>
+              pour destruction de<br/>
+              <span className="text-slate-300">votre voiture épave</span><br/>
+              <span className="text-[#E1000F]">au centre VHU agréé</span>
             </h1>
             <p className="mt-4 lg:mt-6 text-base sm:text-lg text-slate-300 max-w-xl font-medium leading-relaxed border-l-4 border-slate-600 pl-4 lg:pl-6">
               Service officiel d'enlèvement et de recyclage d'épaves {city ? `à ${city}` : "en Île-de-France"}. 
