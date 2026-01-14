@@ -69,9 +69,9 @@ export default function ServicesGrid() {
               <p className="text-slate-600 text-sm font-medium leading-relaxed mb-6">
                 {service.desc}
               </p>
-              <div className="flex items-center text-[#000091] group-hover:text-[#E1000F] text-sm font-black uppercase tracking-wide border-t-2 border-dotted border-slate-200 pt-4">
+              <a href="tel:0695297785" className="flex items-center text-[#000091] group-hover:text-[#E1000F] text-sm font-black uppercase tracking-wide border-t-2 border-dotted border-slate-200 pt-4 cursor-pointer">
                 Demander <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
-              </div>
+              </a>
             </div>
           ))}
         </div>
