@@ -6,7 +6,7 @@ export default function LocalBusinessSchema({ city }: { city?: string }) {
     "@type": ["AutoPartsStore", "RecyclingCenter"],
     "name": `${COMPANY_INFO.name}${city ? ` - ${city}` : ''}`,
     "description": `Service d'enlèvement d'épave gratuit agréé VHU ${city ? `à ${city}` : 'en Île-de-France'}. Intervention rapide 7j/7 pour destruction de véhicule et recyclage.`,
-    "url": "https://epaviste-vhu-idf.fr", // Placeholder domain
+    "url": "https://www.epavisteprovhu.fr",
     "telephone": COMPANY_INFO.phone,
     "priceRange": COMPANY_INFO.priceRange,
     "address": {

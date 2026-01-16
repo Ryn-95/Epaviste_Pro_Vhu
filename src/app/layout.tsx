@@ -43,6 +43,28 @@ export const metadata: Metadata = {
       { url: '/apple-icon.png' },
     ],
   },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://www.epavisteprovhu.fr',
+    title: 'Épaviste Pro VHU Gratuit Île-de-France - Agréé Préfecture',
+    description: "Service d'enlèvement d'épave gratuit 7j/7 en Île-de-France. Centre VHU Agréé (PR 920001 B). Certificat de destruction immédiat.",
+    siteName: 'Épaviste Pro VHU',
+    images: [
+      {
+        url: '/epaviste-action.jpg', // Ensure this image exists or use a valid one
+        width: 1200,
+        height: 630,
+        alt: 'Épaviste Pro VHU Intervention',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Épaviste Pro VHU Gratuit Île-de-France',
+    description: "Enlèvement d'épave gratuit et agréé en Île-de-France. Intervention rapide.",
+    images: ['/epaviste-action.jpg'],
+  },
 };
 
 export default function RootLayout({

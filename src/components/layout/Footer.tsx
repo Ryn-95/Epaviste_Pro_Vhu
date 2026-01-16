@@ -68,6 +68,23 @@ export default function Footer() {
                    <li><Link href="#" className="hover:text-white transition-colors flex items-center gap-2"><span>›</span> Prime à la conversion</Link></li>
                 </ul>
              </div>
+             <div>
+                <h5 className="text-white font-bold mb-3 uppercase border-b border-slate-700 pb-1">Contact Direct</h5>
+                <ul className="space-y-2 text-slate-400">
+                   <li className="flex flex-col">
+                      <span className="text-slate-500 text-[10px] uppercase font-bold">Adresse :</span>
+                      <span className="text-white">{COMPANY_INFO.address}</span>
+                   </li>
+                   <li className="flex flex-col mt-2">
+                      <span className="text-slate-500 text-[10px] uppercase font-bold">Téléphone :</span>
+                      <a href={COMPANY_INFO.phoneLink} className="text-white hover:text-[#E1000F] transition-colors font-bold">{COMPANY_INFO.phone}</a>
+                   </li>
+                   <li className="flex flex-col mt-2">
+                      <span className="text-slate-500 text-[10px] uppercase font-bold">Email :</span>
+                      <a href={`mailto:${COMPANY_INFO.email}`} className="text-white hover:text-blue-400 transition-colors">{COMPANY_INFO.email}</a>
+                   </li>
+                </ul>
+             </div>
           </div>
         </div>
 
