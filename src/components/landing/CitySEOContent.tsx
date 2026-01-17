@@ -124,7 +124,7 @@ export default function CitySEOContent({ city, deptCode, deptName }: CitySEOCont
 
             <div className="bg-[#E1000F] text-white p-6 mt-8 text-center rounded-sm">
               <p className="font-bold text-lg mb-2 uppercase">Une épave à enlever à {city} ?</p>
-              <p className="mb-6 opacity-90">{content.cta}</p>
+              <div className="mb-6 opacity-90 [&_a]:underline [&_a]:font-bold [&_a]:text-white" dangerouslySetInnerHTML={{ __html: content.cta }} />
               <a href={COMPANY_INFO.phoneLink} className="inline-flex items-center gap-2 bg-white text-[#E1000F] font-black px-6 py-3 uppercase tracking-wide hover:bg-slate-100 transition-colors">
                 <Phone className="w-5 h-5" />
                 Appeler le {COMPANY_INFO.phone}
