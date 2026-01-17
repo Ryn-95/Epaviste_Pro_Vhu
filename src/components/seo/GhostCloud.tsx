@@ -14,7 +14,7 @@ export default function GhostCloud({ city }: { city: string }) {
     <section className="mt-12 border-t border-gray-100 pt-8 bg-gray-50 p-6 rounded-xl">
       <details className="group">
         <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-gray-600">
-          <span>📍 Voir les zones d'intervention spécifiques à {city}</span>
+          <span>Voir les zones d'intervention spécifiques à {city}</span>
           <span className="transition group-open:rotate-180">
             <MapPin className="h-4 w-4" />
           </span>

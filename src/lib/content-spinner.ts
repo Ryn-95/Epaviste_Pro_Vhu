@@ -178,9 +178,9 @@ export const generateCityContent = (city: string, deptCode: string, deptInfo: De
     whyChoose: process(selectVariation(WHY_CHOOSE[archetype], seed + 'why')),
     ecology: process(selectVariation(ECOLOGY[archetype], seed + 'eco')),
     cta: process(selectVariation([
-      `<a href="tel:0695297785" class="cta-button">📞 Appeler le 06 95 29 77 85</a>`,
-      `<a href="tel:0695297785" class="cta-button">🚀 Intervention Immédiate</a>`,
-      `<a href="tel:0695297785" class="cta-button">♻️ Destruction Gratuite</a>`
+      `<a href="tel:0695297785" class="cta-button">Appeler le 06 95 29 77 85</a>`,
+      `<a href="tel:0695297785" class="cta-button">Intervention Immédiate</a>`,
+      `<a href="tel:0695297785" class="cta-button">Destruction Gratuite</a>`
     ], seed + 'cta')),
     processIntro: process(selectVariation([
       `Étapes pour l'enlèvement à ${city} :`,

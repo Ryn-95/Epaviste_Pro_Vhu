@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Lightbulb } from 'lucide-react';
 
 const FAQS = [
   {
@@ -63,7 +63,7 @@ export default function FAQ() {
         </div>
         
         <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 text-yellow-800 text-xs md:text-sm flex gap-3">
-          <span className="text-2xl">💡</span>
+          <Lightbulb className="w-6 h-6 flex-shrink-0" />
           <p>
             <strong>Besoin d'une assistance juridique ?</strong> Pour toute question complexe concernant une succession, un véhicule étranger ou diplomatique, veuillez contacter notre service conformité au 01 88 33 22 11.
           </p>
