@@ -43,10 +43,10 @@ export default function Footer() {
               Installation Classée pour la Protection de l'Environnement (ICPE). 
             </p>
             <div className="flex flex-wrap gap-4 mt-6">
-               <img src="/logo-etat.svg" alt="République Française" className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity" />
-               <img src="/logo-ademe.svg" alt="ADEME" className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity" />
-               <img src="/logo-iso.svg" alt="ISO 14001" className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity" />
-               <img src="/logo-ecolo.svg" alt="Recyclage" className="h-14 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+               <img src="/logo-etat.svg" alt="République Française" className="h-8 md:h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+               <img src="/logo-ademe.svg" alt="ADEME" className="h-8 md:h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+               <img src="/logo-iso.svg" alt="ISO 14001" className="h-8 md:h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+               <img src="/logo-ecolo.svg" alt="Recyclage" className="h-8 md:h-12 w-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
           </div>
           
