@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   title: {
     template: "%s | Épaviste Pro VHU Gratuit - Intervention Rapide",
-    default: "Épaviste Pro VHU Gratuit Île-de-France - Intervention à Domicile",
+    default: "Épaviste Pro VHU Gratuit Île-de-France",
   },
   description: "Intervention gratuite 7j/7 en Île-de-France pour l'enlèvement de votre épave. Centre VHU agréé, destruction écologique, certificat de cession immédiat.",
   robots: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://www.epavisteprovhu.fr',
-    title: 'Épaviste Pro VHU Gratuit Île-de-France - Intervention à Domicile',
+    title: 'Épaviste Pro VHU Gratuit Île-de-France',
     description: "Intervention gratuite 7j/7 en Île-de-France pour l'enlèvement de votre épave. Centre VHU agréé, destruction écologique, certificat de cession immédiat.",
     siteName: 'Épaviste Pro VHU',
     images: [
