@@ -39,7 +39,7 @@ export default function VideoSection() {
                 preload="auto"
                 poster="/epaviste-1.jpg"
              >
-                <source src="/videos/Ecrasementvoiture.mp4" type="video/mp4" />
+                <source src="/videos/Ecrasementvoiture.mp4#t=0,10" type="video/mp4" />
                 Votre navigateur ne supporte pas la lecture de vidéos.
              </video>
              <div className="bg-slate-800 p-4 border-t border-slate-700">
@@ -64,7 +64,7 @@ export default function VideoSection() {
                 preload="metadata"
                 poster="/wrecked-car.jpg"
              >
-                <source src="/videos/Ecrasementvoiture2.mp4" type="video/mp4" />
+                <source src="/videos/Ecrasementvoiture2.mp4#t=0,3" type="video/mp4" />
                 Votre navigateur ne supporte pas la lecture de vidéos.
              </video>
              <div className="bg-slate-800 p-4 border-t border-slate-700">
