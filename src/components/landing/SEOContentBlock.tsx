@@ -55,6 +55,38 @@ export default function SEOContentBlock() {
           </p>
         </article>
 
+        <div className="mt-12">
+          <h3 className="text-center font-black uppercase text-xl mb-8 text-slate-900">
+            Zones d'Intervention Épaviste Pro VHU Île-de-France
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <Link href="/epaviste/75" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 75
+            </Link>
+            <Link href="/epaviste/77" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 77
+            </Link>
+            <Link href="/epaviste/78" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 78
+            </Link>
+            <Link href="/epaviste/91" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 91
+            </Link>
+            <Link href="/epaviste/92" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 92
+            </Link>
+            <Link href="/epaviste/93" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 93
+            </Link>
+            <Link href="/epaviste/94" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 94
+            </Link>
+            <Link href="/epaviste/95" className="block p-3 bg-slate-50 hover:bg-[#E1000F] hover:text-white transition-colors rounded border border-slate-200 font-bold text-sm">
+              Épaviste Pro VHU 95
+            </Link>
+          </div>
+        </div>
+
         <div className="mt-12 text-center">
           <Link 
             href="/contact" 
