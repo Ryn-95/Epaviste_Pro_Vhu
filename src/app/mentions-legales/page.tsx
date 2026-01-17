@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Mentions Légales | Épaviste Pro VHU',
   description: 'Mentions légales et informations juridiques de notre service d\'enlèvement d\'épaves agréé VHU.',
-  robots: 'noindex, nofollow'
+  robots: 'index, follow'
 };
 
 export default function MentionsLegales() {

@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'CGV / CGU | Épaviste Pro VHU',
   description: 'Conditions Générales d\'Utilisation et de Service.',
-  robots: 'noindex, nofollow'
+  robots: 'index, follow'
 };
 
 export default function CGV() {

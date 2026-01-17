@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Politique de Confidentialité | Épaviste Pro VHU',
   description: 'Notre politique de protection des données personnelles (RGPD).',
-  robots: 'noindex, nofollow'
+  robots: 'index, follow'
 };
 
 export default function PolitiqueConfidentialite() {

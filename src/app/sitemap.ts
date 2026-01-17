@@ -21,6 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 1.0,
   }));
 
+  const deptRoutes = Object.keys(deptMap).map((deptCode) => ({
+    url: `${BASE_URL}/epaviste/${deptCode}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
   const cityRoutes = Object.entries(deptMap).flatMap(([deptCode, info]) => {
     return info.topCities.map((city) => ({
       url: `${BASE_URL}/epaviste/${deptCode}/${slugifyCity(city)}`,
@@ -30,5 +37,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }));
   });
 
-  return [...routes, ...cityRoutes];
+  return [...routes, ...deptRoutes, ...cityRoutes];
 }
