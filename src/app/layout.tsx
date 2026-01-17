@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     viewportFit: 'cover',
   },
   title: {
-    template: "%s | Épaviste Pro VHU Gratuit - Agréé Préfecture",
-    default: "Épaviste Pro VHU Gratuit Île-de-France - Agréé PR 920001 B",
+    template: "%s | Épaviste Pro VHU Gratuit - Intervention Rapide",
+    default: "Épaviste Pro VHU Gratuit Île-de-France - Intervention à Domicile",
   },
-  description: "Service Épaviste Pro VHU Gratuit. Enlèvement d'épave 7j/7 en Île-de-France. Centre Agréé Préfecture (PR 920001 B). Certificat de Destruction immédiat.",
+  description: "Intervention gratuite 7j/7 en Île-de-France pour l'enlèvement de votre épave. Centre VHU agréé, destruction écologique, certificat de cession immédiat.",
   robots: {
     index: true,
     follow: true,
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://www.epavisteprovhu.fr',
-    title: 'Épaviste Pro VHU Gratuit Île-de-France - Agréé Préfecture',
-    description: "Service d'enlèvement d'épave gratuit 7j/7 en Île-de-France. Centre VHU Agréé (PR 920001 B). Certificat de destruction immédiat.",
+    title: 'Épaviste Pro VHU Gratuit Île-de-France - Intervention à Domicile',
+    description: "Intervention gratuite 7j/7 en Île-de-France pour l'enlèvement de votre épave. Centre VHU agréé, destruction écologique, certificat de cession immédiat.",
     siteName: 'Épaviste Pro VHU',
     images: [
       {
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Épaviste Pro VHU Gratuit Île-de-France',
-    description: "Enlèvement d'épave gratuit et agréé en Île-de-France. Intervention rapide.",
+    description: "Intervention gratuite 7j/7 en Île-de-France pour l'enlèvement de votre épave. Centre VHU agréé.",
     images: ['/epaviste-action.jpg'],
   },
 };
