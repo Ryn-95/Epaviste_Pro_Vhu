@@ -44,7 +44,7 @@ export default function ModernHero({ city }: { city?: string }) {
           <div className="max-w-full">
             <h1 className="font-serif text-[clamp(1.4rem,3.5vw,2.5rem)] leading-[1.15] font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
               Intervention à domicile<br/>
-              <span className="text-slate-300">Destruction de votre véhicule</span><br/>
+              <span className="text-slate-400">Destruction de votre véhicule</span><br/>
               <span className="text-[#E1000F]">au centre VHU agréé</span>
             </h1>
             <p className="mt-4 lg:mt-6 text-base sm:text-lg text-slate-300 max-w-xl font-medium leading-relaxed border-l-4 border-slate-600 pl-4 lg:pl-6">
