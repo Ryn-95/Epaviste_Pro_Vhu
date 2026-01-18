@@ -152,7 +152,14 @@ export default function DepartmentPage({ params }: PageProps) {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
+          <Link 
+            href="/zones-intervention" 
+            className="inline-block text-blue-600 font-bold hover:underline mb-6"
+          >
+            » Voir toutes les villes de la zone {deptCode}
+          </Link>
+          
           <p className="text-sm text-slate-500 italic mb-6">
             * Votre ville n'est pas dans la liste ? Nous intervenons partout dans le {deptCode}.
           </p>
