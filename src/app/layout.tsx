@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     viewportFit: 'cover',
   },
   title: {
-    template: "%s | Épaviste Pro VHU Gratuit - Intervention Rapide",
-    default: "Épaviste Pro VHU Gratuit Île-de-France",
+    template: "%s | Épaviste Pro VHU Gratuit - Intervention Rapide 2026",
+    default: "Épaviste Pro VHU Gratuit Île-de-France - Enlèvement Épave Agréé",
   },
-  description: "Intervention gratuite 7j/7 en Île-de-France pour l'enlèvement de votre épave. Centre VHU agréé, destruction écologique, certificat de cession immédiat.",
+  description: "⚡️ Intervention GRATUITE et IMMÉDIATE 7j/7. Épaviste agréé VHU pour enlèvement d'épave en Île-de-France. Certificat de destruction remis sur place.",
   robots: {
     index: true,
     follow: true,
@@ -33,6 +33,15 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "IdAKYkmSar288rIGFeySADxOY2PJk1YpjOUBkbnRX_U",
+  },
+  icons: {
+    icon: [
+      { url: '/icon.png?v=3' },
+      { url: '/favicon.ico?v=3' },
+    ],
+    apple: [
+      { url: '/apple-icon.png?v=3' },
+    ],
   },
   openGraph: {
     type: 'website',
