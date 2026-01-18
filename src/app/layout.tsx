@@ -10,6 +10,9 @@ const robotoSlab = Roboto_Slab({ subsets: ["latin"], variable: '--font-roboto-sl
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.epavisteprovhu.fr'),
+  alternates: {
+    canonical: '/',
+  },
   viewport: {
     width: 'device-width',
     initialScale: 1,

@@ -13,9 +13,14 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const deptInfo = getDeptInfo(params.dept);
+  const deptCode = params.dept;
+  
   return {
-    title: `Épaviste Pro VHU ${params.dept} (${deptInfo.name}) - Enlèvement Gratuit`,
-    description: `Épaviste Pro VHU ${params.dept} : Intervention gratuite 7j/7 dans le ${params.dept} (${deptInfo.name}). Centre agréé préfecture. Certificat de destruction immédiat.`,
+    title: `Épaviste Agréé ${deptInfo.name} (${deptCode}) - Enlèvement Gratuit`,
+    description: `Service d'épaviste gratuit dans le ${deptInfo.name}. Intervention immédiate sur ${deptInfo.highways}. Centre VHU agréé ${deptInfo.prefectureCity}.`,
+    alternates: {
+      canonical: `/epaviste/${deptCode}`,
+    },
   };
 }
 
