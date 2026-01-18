@@ -34,15 +34,6 @@ export const metadata: Metadata = {
   verification: {
     google: "IdAKYkmSar288rIGFeySADxOY2PJk1YpjOUBkbnRX_U",
   },
-  icons: {
-    icon: [
-      { url: '/icon.png' },
-      { url: '/favicon.png' },
-    ],
-    apple: [
-      { url: '/apple-icon.png' },
-    ],
-  },
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
