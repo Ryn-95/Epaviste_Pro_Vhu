@@ -55,10 +55,15 @@ export default function ModernHero({ city }: { city?: string }) {
           
           {/* BOUTON ACTION "PROCÉDURE" */}
           <div className="flex flex-col sm:flex-row gap-4 pt-2 lg:pt-4 w-full sm:w-auto">
-            <a href="tel:0695297785" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-6 lg:px-8 py-4 lg:py-5 font-black text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10 w-full sm:w-auto rounded-lg sm:rounded-none">
-               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-               Démarrer la procédure
-            </a>
+            <div className="flex flex-col gap-2 w-full sm:w-auto">
+              <a href="tel:0695297785" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-6 lg:px-8 py-4 lg:py-5 font-black text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10 w-full sm:w-auto rounded-lg sm:rounded-none">
+                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                 Démarrer la procédure
+              </a>
+              <span className="text-[10px] text-slate-400 text-center uppercase tracking-widest font-bold border border-slate-700 rounded px-2 py-1 bg-slate-900/50">
+                 ⛔️ Pas de vente de pièces
+              </span>
+            </div>
             <div className="flex flex-col justify-center items-center sm:items-start px-6 py-3 sm:py-0 border-l-0 sm:border-l border-white/10 bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-none">
                <div className="flex items-center gap-2 text-[#4ade80] font-bold text-xs uppercase tracking-wider mb-1">
                  <span className="relative flex h-2 w-2">

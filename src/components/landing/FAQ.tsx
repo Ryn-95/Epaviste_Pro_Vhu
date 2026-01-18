@@ -3,6 +3,11 @@ import { ChevronDown, Lightbulb } from 'lucide-react';
 
 const FAQS = [
   {
+    q: "VENDEZ-VOUS DES PIÈCES DÉTACHÉES ?",
+    sub: "Attention : Service d'enlèvement uniquement",
+    a: "NON. Nous sommes un service d'enlèvement d'épaves (VHU) destiné à la destruction et au recyclage. Nous ne vendons AUCUNE pièce détachée, ni moteur, ni accessoire. Pour des pièces, veuillez contacter une casse auto traditionnelle."
+  },
+  {
     q: "POURQUOI CHOISIR UN ÉPAVISTE PRO VHU ?",
     sub: "Garantie légale et écologique",
     a: "Faire appel à un Épaviste Pro VHU (Véhicule Hors d'Usage) est une OBLIGATION LÉGALE. Seul un professionnel agréé par la préfecture (comme notre centre PR 920001 B) est habilité à délivrer le certificat de destruction qui vous dégage de toute responsabilité administrative et juridique."

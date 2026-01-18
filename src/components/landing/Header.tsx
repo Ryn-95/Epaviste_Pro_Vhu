@@ -147,10 +147,17 @@ export default function Header() {
                   <span className="text-lg font-black tracking-tight">06 95 29 77 85</span>
                 </div>
               </a>
+              {/* Disclaimer Pièces */}
+              <div className="absolute -bottom-8 right-0 bg-slate-900 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm border border-slate-700 whitespace-nowrap opacity-80 hidden lg:block">
+                ⚠️ PAS DE VENTE DE PIÈCES
+              </div>
             </div>
 
             {/* MOBILE ACTION & TOGGLE */}
             <div className="flex items-center gap-2 xl:hidden">
+              <div className="flex flex-col items-end mr-1">
+                 <span className="text-[9px] text-red-600 font-bold bg-red-50 px-1 rounded border border-red-100 whitespace-nowrap">PAS DE PIÈCES</span>
+              </div>
               {/* MOBILE CALL BUTTON */}
               <a 
                 href="tel:0695297785" 
