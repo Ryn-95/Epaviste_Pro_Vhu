@@ -43,27 +43,22 @@ export default function ModernHero({ city }: { city?: string }) {
           {/* TITRE SERIF ROBUSTE - TAILLES FLUIDES */}
           <div className="max-w-full">
             <h1 className="font-serif text-[clamp(1.4rem,3.5vw,2.5rem)] leading-[1.15] font-black text-white uppercase drop-shadow-xl tracking-tight break-words">
-              Intervention à domicile<br/>
-              <span className="text-slate-400">Destruction de votre véhicule</span><br/>
-              <span className="text-[#E1000F]">au centre VHU agréé</span>
+              ÉPAVISTE PRO VHU AGRÉÉ<br/>
+              <span className="text-slate-400">Enlèvement d'Épave Gratuit</span><br/>
+              <span className="text-[#E1000F]">Destruction Centre VHU</span>
             </h1>
             <p className="mt-4 lg:mt-6 text-base sm:text-lg text-slate-300 max-w-xl font-medium leading-relaxed border-l-4 border-slate-600 pl-4 lg:pl-6">
-              Service officiel d'enlèvement et de recyclage d'épaves {city ? `à ${city}` : "en Île-de-France"}. 
-              <span className="block mt-1 text-slate-400 text-sm">Conformité préfectorale garantie (Code de l'environnement Art. R543-162).</span>
+              Votre <strong>Épaviste Pro VHU</strong> assure l'enlèvement gratuit de votre véhicule {city ? `à ${city}` : "en Île-de-France"}. 
+              <span className="block mt-1 text-slate-400 text-sm">Service officiel agréé préfecture (PR 920001 B). Certificat de destruction remis sur place.</span>
             </p>
           </div>
           
           {/* BOUTON ACTION "PROCÉDURE" */}
           <div className="flex flex-col sm:flex-row gap-4 pt-2 lg:pt-4 w-full sm:w-auto">
-            <div className="flex flex-col gap-2 w-full sm:w-auto">
-              <a href="tel:0695297785" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-6 lg:px-8 py-4 lg:py-5 font-black text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10 w-full sm:w-auto rounded-lg sm:rounded-none">
-                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                 Démarrer la procédure
-              </a>
-              <span className="text-[10px] text-slate-400 text-center uppercase tracking-widest font-bold border border-slate-700 rounded px-2 py-1 bg-slate-900/50">
-                 ⛔️ Pas de vente de pièces
-              </span>
-            </div>
+            <a href="tel:0695297785" className="group bg-[#E1000F] hover:bg-[#b9000c] text-white px-6 lg:px-8 py-4 lg:py-5 font-black text-lg uppercase tracking-wide shadow-[0_0_20px_rgba(225,0,15,0.3)] transition-all flex items-center justify-center gap-3 border border-white/10 w-full sm:w-auto rounded-lg sm:rounded-none">
+               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+               Démarrer la procédure
+            </a>
             <div className="flex flex-col justify-center items-center sm:items-start px-6 py-3 sm:py-0 border-l-0 sm:border-l border-white/10 bg-white/5 backdrop-blur-sm rounded-lg sm:rounded-none">
                <div className="flex items-center gap-2 text-[#4ade80] font-bold text-xs uppercase tracking-wider mb-1">
                  <span className="relative flex h-2 w-2">

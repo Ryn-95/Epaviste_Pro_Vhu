@@ -15,7 +15,7 @@ export default function DocumentsPage() {
       
       <main className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-8 uppercase tracking-tight border-b-4 border-slate-400 pb-4 inline-block">
-          Documents à Fournir
+          Documents Obligatoires - Épaviste Pro VHU
         </h1>
 
         <p className="text-lg text-slate-700 mb-8 font-medium">

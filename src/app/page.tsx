@@ -8,6 +8,7 @@ import Testimonials from '@/components/landing/Testimonials';
 import FAQ from '@/components/landing/FAQ';
 import CitySEOContent from '@/components/landing/CitySEOContent';
 import GovernmentAid from '@/components/landing/GovernmentAid';
+import DepartmentsGrid from '@/components/landing/DepartmentsGrid';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import SEOContentBlock from '@/components/landing/SEOContentBlock';
 
@@ -27,6 +28,9 @@ export default function Home() {
 
       {/* 4. Government Aid Info (SEO + Trust) */}
       <GovernmentAid />
+
+      {/* 4.5. Departments Grid - SEO Boosting */}
+      <DepartmentsGrid />
 
       {/* 5. How it works */}
       <ProcessSteps />

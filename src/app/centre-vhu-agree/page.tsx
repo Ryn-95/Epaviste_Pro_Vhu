@@ -15,7 +15,7 @@ export default function CentreVhuPage() {
       
       <main className="max-w-5xl mx-auto px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-8 uppercase tracking-tight border-b-4 border-green-600 pb-4 inline-block">
-          Notre Centre VHU Agréé
+          Centre VHU Agréé - Épaviste Pro VHU
         </h1>
 
         <div className="bg-green-50 border-l-4 border-green-600 p-6 mb-12">

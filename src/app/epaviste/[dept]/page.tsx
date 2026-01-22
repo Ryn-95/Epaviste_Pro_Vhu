@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Header from '@/components/landing/Header';
 import { getDeptInfo } from '@/lib/idf-data';
+import { slugifyCity } from '@/lib/utils';
 import { MapPin, Phone, ShieldCheck, Truck, Clock, AlertTriangle, FileText, CheckCircle, Navigation } from 'lucide-react';
 import Link from 'next/link';
 
@@ -138,7 +139,7 @@ export default function DepartmentPage({ params }: PageProps) {
           {deptInfo.topCities.map((city, index) => (
             <Link 
               key={index}
-              href={`/epaviste/${deptCode}/${city.toLowerCase().replace(/ /g, '-').replace(/é/g, 'e').replace(/è/g, 'e').replace(/â/g, 'a')}`}
+              href={`/epaviste/${deptCode}/${slugifyCity(city)}`}
               className="group bg-white p-4 rounded-lg border border-slate-200 shadow-sm hover:shadow-md hover:border-red-300 transition-all flex items-center justify-between"
             >
               <div className="flex items-center gap-3">

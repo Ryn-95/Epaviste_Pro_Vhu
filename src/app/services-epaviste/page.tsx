@@ -16,7 +16,7 @@ export default function ServicesPage() {
       
       <main className="max-w-5xl mx-auto px-4 py-12">
         <h1 className="text-3xl md:text-4xl font-black text-slate-900 mb-8 uppercase tracking-tight border-b-4 border-[#000091] pb-4 inline-block">
-          Nos Services d'Enlèvement
+          Services Épaviste Pro VHU - Enlèvement Gratuit
         </h1>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
