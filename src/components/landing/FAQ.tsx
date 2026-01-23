@@ -35,7 +35,7 @@ export default function FAQ() {
       <div className="max-w-5xl mx-auto px-4">
         <div className="mb-10 pb-4 border-b-2 border-[#000091] flex justify-between items-end">
           <div>
-            <h2 className="text-2xl font-black text-slate-900 uppercase">Foire Aux Questions</h2>
+            <h2 className="text-2xl font-black text-slate-900 uppercase">Questions Fréquentes - Épaviste Pro VHU</h2>
             <p className="text-slate-600 text-sm mt-1">Base de connaissance réglementaire et technique</p>
           </div>
           <div className="hidden md:block bg-blue-50 text-[#000091] px-3 py-1 text-xs font-bold border border-blue-100">

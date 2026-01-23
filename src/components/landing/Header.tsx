@@ -59,7 +59,7 @@ export default function Header() {
                 </div>
                 <div className="flex flex-col overflow-hidden">
                   <div className="font-serif text-lg sm:text-xl md:text-2xl font-black text-white uppercase tracking-tight leading-none group-hover:text-blue-400 transition-colors truncate">
-                    Épaviste<span className="text-[#E1000F]">.PRO</span>
+                    Épaviste<span className="text-[#E1000F]"> PRO VHU</span>
                   </div>
                   <div className="flex items-center gap-2 mt-0.5">
                     <div className="flex gap-0.5 shrink-0">
