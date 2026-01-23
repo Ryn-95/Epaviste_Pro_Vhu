@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     viewportFit: 'cover',
   },
   title: {
-    template: "%s | Épaviste Pro VHU Gratuit - Intervention Rapide 2026",
-    default: "Épaviste Pro VHU Gratuit Île-de-France - Enlèvement Épave Agréé",
+    template: "%s | Épaviste Pro VHU - Service Agréé Île-de-France",
+    default: "Épaviste Pro VHU - Enlèvement Épave Gratuit Île-de-France (Agréé)",
   },
   description: "⚡️ Intervention GRATUITE et IMMÉDIATE 7j/7. Épaviste agréé VHU pour enlèvement d'épave en Île-de-France. Certificat de destruction remis sur place.",
   robots: {
