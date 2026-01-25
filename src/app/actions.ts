@@ -1,7 +1,5 @@
 'use server';
 
-import nodemailer from 'nodemailer';
-
 export async function sendLeadEmail(formData: FormData) {
   const name = formData.get('name') as string;
   const phone = formData.get('phone') as string;
@@ -12,62 +10,62 @@ export async function sendLeadEmail(formData: FormData) {
     return { success: false, message: 'Veuillez remplir tous les champs.' };
   }
 
-  // Configuration du transporteur SMTP (Outlook)
-  // Nécessite les variables d'environnement : SMTP_EMAIL et SMTP_PASSWORD
-  const transporter = nodemailer.createTransport({
-    host: 'smtp-mail.outlook.com',
-    port: 587,
-    secure: false, // true for 465, false for other ports
-    auth: {
-      user: process.env.SMTP_EMAIL || 'epaviste.provhu@outlook.fr',
-      pass: process.env.SMTP_PASSWORD,
-    },
-    tls: {
-      ciphers: 'SSLv3'
-    }
-  });
+  // Vérification basique anti-spam
+  if (name.length < 2 || phone.length < 10) {
+    return { success: false, message: 'Veuillez renseigner des informations valides.' };
+  }
 
+  // SOLUTION SANS MOT DE PASSE (Via FormSubmit.co)
+  // L'email sera envoyé automatiquement à : epaviste.provhu@gmail.com
+  // IMPORTANT : Lors du tout premier test, vous recevrez un mail de "FormSubmit" 
+  // vous demandant de confirmer l'adresse email (bouton "Activate"). C'est tout !
+  
   try {
-    await transporter.sendMail({
-      from: `"Formulaire VHU" <${process.env.SMTP_EMAIL || 'epaviste.provhu@outlook.fr'}>`,
-      to: 'epaviste.provhu@outlook.fr',
-      subject: `Nouveau Dossier VHU : ${name} (${city})`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;">
-          <h2 style="color: #E1000F; text-transform: uppercase; border-bottom: 2px solid #E1000F; padding-bottom: 10px;">Nouveau Dossier d'Enlèvement</h2>
-          
-          <div style="background-color: #f8f9fa; padding: 15px; margin-bottom: 20px; border-radius: 4px;">
-            <p style="margin: 0; font-weight: bold; color: #555;">RÉFÉRENCE DOSSIER</p>
-            <p style="margin: 5px 0 0 0; font-size: 18px; color: #000;">${ref}</p>
-          </div>
-
-          <table style="width: 100%; border-collapse: collapse;">
-            <tr>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; width: 40%; font-weight: bold; color: #555;">Nom du propriétaire</td>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; color: #000;">${name}</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Téléphone</td>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; color: #000; font-size: 16px;">
-                <a href="tel:${phone}" style="color: #E1000F; text-decoration: none; font-weight: bold;">${phone}</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Lieu du véhicule</td>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; color: #000;">${city}</td>
-            </tr>
-          </table>
-
-          <div style="margin-top: 30px; font-size: 12px; color: #888; text-align: center;">
-            <p>Ce message a été envoyé automatiquement depuis le site Epaviste Pro VHU.</p>
-          </div>
-        </div>
-      `,
+    const response = await fetch('https://formsubmit.co/ajax/epaviste.provhu@gmail.com', {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        // Headers requis pour que FormSubmit accepte la requête venant d'un serveur (Server Action)
+        'Referer': 'https://epaviste-pro-vhu.fr', 
+        'Origin': 'https://epaviste-pro-vhu.fr'
+      },
+      body: JSON.stringify({
+        _subject: `Nouveau Dossier VHU : ${name} (${city})`,
+        _template: 'table', // Format tableau propre
+        _captcha: 'false', // Pas de captcha compliqué
+        _honey: '', // Champ anti-spam caché
+        
+        // Les données du formulaire
+        Reference: ref,
+        Nom: name,
+        Telephone: phone,
+        Ville: city,
+        Date: new Date().toLocaleDateString('fr-FR'),
+        Source: 'Site Web Epaviste Pro VHU'
+      })
     });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(`Erreur HTTP ${response.status}: ${errorText}`);
+    }
+
+    const data = await response.json();
+    
+    // FormSubmit renvoie 200 même en cas d'erreur (ex: activation requise)
+    if (data.success === 'false' || data.success === false) {
+      // Cas spécifique de l'activation
+      if (data.message && data.message.includes('Activation')) {
+         return { success: true, message: 'Dossier reçu ! Vérifiez vos emails (epaviste.provhu@gmail.com) pour activer le service lors de ce premier envoi.' };
+      }
+      throw new Error(data.message || 'Erreur inconnue FormSubmit');
+    }
 
     return { success: true, message: 'Dossier validé avec succès ! Nous vous rappelons sous 10 minutes.' };
   } catch (error) {
-    console.error('Erreur lors de l\'envoi de l\'email:', error);
-    return { success: false, message: 'Une erreur est survenue. Veuillez nous contacter directement par téléphone.' };
+    console.error('Erreur envoi email:', error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    return { success: false, message: `Erreur technique : ${errorMessage}` };
   }
 }
