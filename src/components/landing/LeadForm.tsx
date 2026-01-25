@@ -2,28 +2,71 @@
 
 import { useState } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { sendLeadEmail } from '@/app/actions';
 
 export default function LeadForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
 
-  async function handleSubmit(formData: FormData) {
+  async function handleClientSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     setStatus('loading');
     
-    try {
-      const result = await sendLeadEmail(formData);
-      
-      if (result.success) {
-        setStatus('success');
-        setMessage(result.message);
-      } else {
-        setStatus('error');
-        setMessage(result.message);
-      }
-    } catch (error) {
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get('name') as string;
+    const phone = formData.get('phone') as string;
+    const city = formData.get('city') as string;
+    const ref = `VHU-${new Date().getFullYear()}-IDF`;
+
+    // Validation locale
+    if (name.length < 2) {
       setStatus('error');
-      setMessage("Une erreur technique est survenue.");
+      setMessage('Le nom doit contenir au moins 2 caractères.');
+      return;
+    }
+    if (phone.length < 10) {
+      setStatus('error');
+      setMessage('Le numéro de téléphone doit être valide (10 chiffres).');
+      return;
+    }
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/epaviste.provhu@gmail.com', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `Nouveau Dossier VHU : ${name} (${city})`,
+          _template: 'table',
+          _captcha: 'false',
+          Reference: ref,
+          Nom: name,
+          Telephone: phone,
+          Ville: city,
+          Date: new Date().toLocaleDateString('fr-FR'),
+          Source: 'Site Web Epaviste Pro VHU'
+        })
+      });
+
+      const data = await response.json();
+
+      if (data.success === 'false' || data.success === false) {
+        if (data.message && data.message.includes('Activation')) {
+          setStatus('success');
+          setMessage('Dossier reçu ! Vérifiez vos emails (epaviste.provhu@gmail.com) pour activer le service lors de ce premier envoi.');
+          return;
+        }
+        throw new Error(data.message || 'Erreur inconnue FormSubmit');
+      }
+
+      setStatus('success');
+      setMessage('Dossier validé avec succès ! Nous vous rappelons sous 10 minutes.');
+      
+    } catch (error) {
+      console.error('Erreur envoi:', error);
+      setStatus('error');
+      setMessage("Une erreur est survenue. Veuillez nous contacter directement par téléphone.");
     }
   }
 
@@ -44,7 +87,7 @@ export default function LeadForm() {
   }
 
   return (
-    <form className="space-y-4" action={handleSubmit}>
+    <form className="space-y-4" onSubmit={handleClientSubmit}>
       {status === 'error' && (
         <div className="bg-red-500/10 border border-red-500/20 p-4 flex items-center gap-3 rounded-sm mb-4 animate-fade-in">
           <AlertCircle className="w-5 h-5 text-red-500 shrink-0" />
